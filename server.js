@@ -66,6 +66,9 @@ const User = mongoose.model('User', {
 
 });
 
+app.get('/',function(req,res){
+  res.send('Welcome')
+});
 // Create a new user
 
 app.post('/addusers', async (req, res) => {
